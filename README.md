@@ -1,2 +1,2 @@
 # environment-presets
-Reusable presets for prompts, shells and environments
+Reusable presets for editors, shells and environments
