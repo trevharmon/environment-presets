@@ -4,7 +4,7 @@ echo '### Install Docker ###'
 sudo echo
 echo '--- Install System Packages ---'
 sudo apt update
-sudo apt install \
+sudo apt install -y \
     ca-certificates \
     curl \
     gnupg \
@@ -21,10 +21,11 @@ echo \
 echo
 echo '--- Install Docker Packages ---'
 sudo apt update
-sudo apt install \
+sudo apt install -y \
+    containerd.io \
     docker-ce \
     docker-ce-cli \
-    containerd.io \
+    docker-compose \
     ;
 
 echo

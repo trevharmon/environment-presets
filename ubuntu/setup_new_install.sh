@@ -8,7 +8,7 @@ echo '--- Install packages ---'
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
-sudo apt install \
+sudo apt install -y \
     curl \
     git \
     gnupg \
@@ -52,7 +52,7 @@ fi
 
 echo
 echo '--- Setup `screen` ---'
-sudo apt install screen
+sudo apt install -y screen
 if [ ! -d ~/.screen ]; then
     mkdir ~/.screen
     chmod 700 ~/.screen
@@ -67,7 +67,7 @@ sudo sh -c "
 
 echo
 echo '--- Setup `vim` ---'
-sudo apt install vim
+sudo apt install -y vim
 curl https://raw.githubusercontent.com/trevharmon/environment-presets/master/vim/.vimrc -o /tmp/.vimrc
 chmod 600 /tmp/.vimrc
 cp -f /tmp/.vimrc ~/.vimrc
