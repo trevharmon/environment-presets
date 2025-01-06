@@ -68,7 +68,7 @@ sudo sh -c "
 echo
 echo '--- Setup `vim` ---'
 sudo apt install -y vim
-curl https://raw.githubusercontent.com/trevharmon/environment-presets/master/vim/.vimrc -o /tmp/.vimrc
+curl $URL_VIMRC -o /tmp/.vimrc
 chmod 600 /tmp/.vimrc
 cp -f /tmp/.vimrc ~/.vimrc
 sudo cp -f /tmp/.vimrc /root/.vimrc
