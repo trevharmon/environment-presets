@@ -29,7 +29,8 @@ needs to be enabled using the following process:
 1. At the top of the page, change the dropdown under _Default Search Engine_ to
    your newly created custom search engine.
 
-| ------------------ | --------------------------------------- |
-| Search engine name | _Give it a descriptive name._           |
-| Engine URL         | `https://google.com/search?udm=14&q=%s` |
-| Alias              | _Give it a recognizable alias._         |
+| --------------------- | ----------------------------------------------------------------------------- |
+| Search engine name    | _Give it a descriptive name._                                                 |
+| Engine URL            | `https://google.com/search?udm=14&q=%s`                                       |
+| Search suggestion URL | `http://suggestqueries.google.com/complete/search?client=firefox&udm=14&q=%s` |
+| Alias                 | _Give it a recognizable alias._                                               |
